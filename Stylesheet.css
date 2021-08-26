@@ -1,13 +1,34 @@
 @import 
 url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
-@media (min-width: 425px) {
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen (max-width: 425px) {
+    header {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+body {
+    font-family: 'Merienda';
+    background-color: #32A6F4;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+}
+
+@media screen (max-width: 425px) {
     .container {
         display: flex;
         justify-content: space-around;
     }
 }
 
-div {
-    color: red;
-}
