@@ -2,5 +2,12 @@
 url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 @media (min-width: 425px) {
-    
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+div {
+    color: red;
 }
