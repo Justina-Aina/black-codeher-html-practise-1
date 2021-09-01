@@ -1,42 +1,11 @@
-@import 
-url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-
-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media screen and (max-width: 425px) {
-    header {
-        height: 100px;
-        width: 100px;
-        display: flex;
-        justify-content: right;
-    }  
-}
-
-body {
-    font-family: 'Merienda';
-    background-color: #32A6F4;
-}
-
-.container {
-    display: flex;
-    justify-content: left;
-}
-
-@media screen and (max-width: 425px) {
-    .container {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
 /*from Snazzy-1*/
 @import 
 url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
+/*mobile phones*/
 @media screen and (max-device-width: 425px) {
+    
+    
     html {
         background-color: #3d3b8e; 
     }
@@ -54,7 +23,21 @@ url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
     }
 }
 
+/*tablets, laptops and more*/
 @media screen and (min-device-width: 426px) {
+    .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .container-2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     html {
         background-color: #b0e298;
     }  
@@ -69,6 +52,5 @@ url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
         font-family: "Merienda";
         color: #000;
         font-size: 50px;
-    }
+    }    
 }
-
