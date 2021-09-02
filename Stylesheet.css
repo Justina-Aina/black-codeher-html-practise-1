@@ -4,7 +4,40 @@ url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 /*mobile phones*/
 @media screen and (max-device-width: 425px) {
+    .container-1 {
+        display: grid;
+        grid-template-areas: 
+        "header      header"
+        "paragraph   aside"
+        "main        video"
+        "form        form";
+        align-items: center;
+    }
+    header {grid-area: header}
+    main {grid-area: main;}
+    aside {grid-area: aside;}
+    #paragraph {grid-area: paragraph;}
+    #video {grid-area: video;}
+    #form {grid-area: form;}
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
     
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     html {
         background-color: #3d3b8e; 
@@ -30,7 +63,7 @@ url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
         flex-wrap: wrap;
         align-items: center;
     }
-    
+
     .container-2 {
         display: flex;
         flex-direction: row-reverse;
